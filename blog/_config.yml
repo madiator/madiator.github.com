@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://smahesh.com/blog
+title: Maheswaran Sathiamoorthy's Personal Blog
+subtitle: Thoughts, Code and Research.
+author: Maheswaran Sathiamoorthy
 simple_search: http://google.com/search
 description:
 
