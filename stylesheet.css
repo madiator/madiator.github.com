@@ -9,7 +9,7 @@ ul, ol
 }
 .wrapper
 {
-	background: #e6ebb8;
+	background: rgb(246, 247, 239);
 //	background-image:url(leather_1.gif); //thanks to subtlepatterns.com
 //	background-repeat:repeat;
 	border: 2px solid  #000;
