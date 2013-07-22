@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->   
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" charset="utf-8">
+   <title>Homepage of Maheswaran Sathiamoorthy</title>  
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Homepage of Maheswaran Sathiamoorthy">
+   <meta name="author" content="Maheswaran Sathiamoorthy">
+
+   <!-- Le styles -->
+   <link href='http://fonts.googleapis.com/css?family=Istok+Web|Raleway' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="css/bootstrap.css" type="text/css" charset="utf-8">
+   <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.css">
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+   <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+   <!--[if lt IE 9]>
+     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+   <![endif]-->
+</head>
+<body>
+  <div class="navbar navbar-static-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="#">Research</a></li>
+              <li><a href="research-projects.html">Projects</a></li>
+              <li><a href="other.html">Other Stuff</a></li>                         
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+   </div>
+    
+  <div class="container">
+
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      
+      <div class="hero-unit">
+        <h1>Research</h1>
+        <p>   I am broadly interested in networking and distributed storage systems.
+              I am working towards answering the how and where questions - how to store the data, and where to store the data in
+              distributed storage systems such as data centers and vehicular networks. 
+              In the past I have designed coded storage techniques for Hadoop and for Vehicular Networks to answer the how question.
+              Currently, I am working towards solving the where question.
+              </p>
+        <p><a class="btn btn-primary btn-large" href="Maheswaran_CV.pdf" target="_blank">My Resume</a></p>
+        
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="span12">
+          <h2 class="simpleheading simpleheadingcolored">Coded storage for the cloud</h2>
+          <img src="img/hadoop.png" align="right" width="200"/>
+           <p>
+            This is the age of big data - and being able to manage and utilize big data is a crucial asset for many companies/research centers. <a href="http://hadoop.apache.org/">Hadoop</a> is an open-source platform which is widely used to effectively manage big data across multiple computers in clusters. For example, Facebook has clusters of thousands of computers managing petabytes of data.
+         </p>
+         <p>
+            Due to the sheer number of computers involved in these clusters, failures become the norm rather than the exception
+            and so reliability is an important problem that needs to be addressed. The general trend is to replicate the
+            data multiple times (invariably thrice) across different machines to provide reliability, but this has the
+            cost of additional storage (the storage overhead is 2x if data is replicated three times). When petabyte-scale data has to be replicated
+            multiple times, the cost can easily run into millions of dollars - a costly price to pay for reliability.
+            An alternative approach to reduce this cost is to make use of erasure coding which has been suggested in the past.
+            For example, Facebook uses a (10, 4) Reed-Solomon code in their production clusters for cold data (data which has not been
+            used for a few months). Since each file is now stored 1.4x instead of 3x, the storage overhead is 0.4x instead of 2x.
+            Facebook, which uses Hadoop to manage its production clusters, has made available an open-source module called HDFS-RAID
+            to support erasure coding and this code is available at
+            <a href="https://github.com/facebook/hadoop-20">Facebook's Github page</a>.
+         </p>
+         <p>
+            But there is a problem with using regular erasure coding schemes for cloud storage. The issue is that of high
+            network utilization during repairs - when data is lost, about 10 times more data has to be downloaded to recover
+            the lost data if coding was used. In contrast, if replication was used, the network has to move data only equal
+            to the data that was lost. So this attempt to reduce the storage overhead has led to an increase in network
+            overhead during repairs. Note that when there are thousands of nodes, tens of nodes typically die everyday.
+            When nodes store 10s of TB of data, the network needs to transfer in the orders of PBs of data when ten nodes are lost.
+            This is the main reason why Facebook encodes only about 8% of its data (as of Jan 2011, details drawn from one production cluster at Facebook).
+            
+         </p>
+         <p>
+            I am interested in solving precisely this particular problem.  Along with Megas, Dimitris, and advised by Prof. Alex Dimakis,
+            and in collaboration with Dhruba Borthakur, Ramkumar Vadali and Scott Chen from Facebook, I have been working on porting new set of codes
+            into HDFS-RAID, which is available at my <a href="https://github.com/madiator/hadoop-20" rel="tooltip" title="Source code of our Hadoop">Github page</a>. These codes, which we call
+            as locally repairable codes, use much lower network traffic compared to regular erasure codes, while having a small amount of extra
+            storage overhead. For example, from our experiments on clusters at Amazon and one test cluster at Facebook, we found that our
+            new HDFS-RAID brings in about 2x improvement in network traffic and repair disk I/O as compared to the existing HDFS-RAID.
+         </p>
+        </div>
+        <div class="span12">
+          <h2 class="simpleheading simpleheadingcolored">Vehicular Networks <small> No car is an island</small></h2>
+          <img src="img/vanet.png" title="A sample application scenario when one vehicle encountering a pothole (black ellipse) informs the other vehicle, which in turn can warn other incoming vehicles." align="right" width="500"/>
+          <p>
+            Vehicular Networks are no more mere figments of imagination. Not only has there been significant research in this area, but research centers such as General Motors R&D have prototypes for vehicular networking radios. In the United States, the FCC has allocated 75MHz of spectrum in the 5.9GHz band exclusively for vehicular networks and in Europe, the ETSI has allocated a 20MHz range in the same band. These bands enable vehicle-to-vehicle communication as well as vehicle-to-infrastructure (and vice versa) communication, and capabilities like these open up a number of possibilities. Most applications focus on safety, such as avoiding rear-end collisions;extended braking; and detecting and disseminating information about potholes, bumps and other anomalous road conditions. Recently, applications that concern entertainment and file sharing are also receiving attention and involve different challenges.
+          </p>
+          <p>
+            This development, combined with the trend of equipping more and more cars with better digital entertainment systems will cause an explosive increase in the demand for media access from moving vehicles. Since cellular networks are not well-provisioned to handle such huge demand for content and since content access via cellular networks is expensive, I believe that peer-to-peer file sharing between cars will become a viable option especially since the cost of inter-vehicular communication is next to nothing. In my work, I have investigated how file sharing can be enabled by distributed storage of content across vehicles. My work focuses on theoretical analysis of average file download delays for both uncoded and coded storage followed by realistic trace based simulations. I have been able to show that using erasure codes for file sharing in vehicular networks brings in huge reduction in download delays.
+         </p>
+          <p>
+            The analysis has helped us gain crucial insights into how and when erasure coding is useful and if it is, then what is the speedup obtained in downloading files. Specifically, we find that coding offers substantial benefits over simple replication when the file sizes are large compared to the average download bandwidth available per encounter. Based on large real traces (consisting of GPS co-ordinates of vehicles) of taxis in Beijing and buses in Chicago, we simulate the movement of nodes and transfer of files when they are in range. These simulations validate the observations from the analysis, and demonstrate that coded storage dramatically speeds up the download of large files in vehicular networks.
+          </p>
+          
+        </div>
+     </div>
+      <hr>
+        
+
+      <footer>
+        No great man ever complains of want of opportunities - Ralph Waldo Emerson.
+      </footer>
+
+    </div> <!-- /container -->
+    
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-7617395-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script> 
+</body>
+</html>
