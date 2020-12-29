@@ -15,10 +15,10 @@ Before that, I did my B.Tech(H) in Electronics and Electrical Communication Engi
 
 ## What is this site about?
 This is my home page and blog. I am interested and write/post about the following:
-* Technology (tutorials, commentary).
-* About cognition, our mind, sharpening it with mental models, cognitive biases.
-* Photography and art.
-* and of course miscellaneous articles, in the form of blogs.
+* [Technology (tutorials, commentary)](/tech.html).
+* [About cognition, our mind, sharpening it with mental models, cognitive biases](/mind-over-matter.html).
+* Photography and art (coming someday!).
+* and of course [miscellaneous articles, in the form of blogs](/blog.html).
 
 This site was made with <a target="_blank" class="text-dark font-weight-bold" href="https://www.wowthemes.net/mundana-jekyll-theme/"> Mundana Jekyll Theme </a> by <a class="text-dark" target="_blank" href="https://www.wowthemes.net">WowThemes</a>.
 

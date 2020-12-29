@@ -1,0 +1,23 @@
+---
+layout: post
+title: "2020: It's a wrap!"
+date: 2020-12-29 14:00
+comments: true
+image: assets/images/buddha.jpg
+categories: ["blog"]
+tags: featured
+---
+
+Looking back at my blog, I am disappointed that my last post was in 2018. In fact, my [2018 resolution](/new-year-resolutions) was to write 50k public words, but I barely got to a few thousand.
+2019 seems to have come and gone, and thanks to a break at work, I have managed to get back to my blog a few days before 2021 knocks on the door.
+I do have some good reasons why I didn't get to my blog all this time (becoming a dad, getting promoted at work, traveling quite a bit, and of course, COVID), but I think the biggest reason is the setup of the blog.
+
+This site and blog are designed and built using [Jekyll](https://jekyllrb.com/). This means that if I have to write a post, I need to run a few commands and get them pushed to Github. That's not that bad, but the other reason is that
+all of the underlying technologies are installed in my desktop PC, and due to extensive traveling, I was mostly away from the desktop. I love how customizable Jekyll is, but I hate the overhead it has and hate having to debug build errors. If you want to pick up a new hobby, you always have to cut down on hindrances and make it as easy as it is possible to get to it. In my case, the overhead (which wasn't really that bad, in retrospect) seems to have stopped me from getting to edit posts. In fact, early on, I was using Octopress and in between it broke down, leaving a bad taste in my mouth. All of these, combined with the other complexities of life, meant that I didn't write as much as I should have written. But thankfully, I did do something else as much as possible in 2019 and 2020: to read as many books as possible. I managed to finish 22 books in 2019 and 32 in 2020 (so almost two books per month).
+
+Thanks to the year end break, a few days back I took a second look at my site and was appalled at the state of affairs: the homepage was severely outdated (still read as if I was at USC doing my PhD). My homepage lived in a separate repository in Github, and the blog itself was a different repository. They both had different themes, though they maintained the same domain name. I still do have a different domain for the photos I take (which is also sitting unattended for a couple of years now) and hope to bring those into this domain as well.
+
+I looked into moving over to wordpress so as to make it easy to create, edit and publish posts (remember, no friction), but I still wasn't happy with the amount of customizability it gave. Fortunately, I stumbled across a different 
+[template](https://www.wowthemes.net/mundana-jekyll-theme) I liked, and was able to customize it to my liking. I have designed the site such that there are three category of articles: [stuff about technology](/tech.html), which includes tutorials, commentaries etc., and stuff about the mind and cognitition, which I am titling as [Mind over Matter](/mind-over-matter.html), and lastly miscellaneous articles such as this in the form of [blogs](/blog.html).
+
+

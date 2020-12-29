@@ -4,7 +4,7 @@ title: "Finding Passion"
 date: 2018-07-11 22:00
 comments: true
 image: assets/images/finding-passion1200.jpg
-tags: sticky
+tags: featured, sticky
 categories: ["mind over matter"]
 ---
 

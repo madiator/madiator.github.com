@@ -24,5 +24,3 @@ I didn't finish the 12 books that I wanted to read. But I did spend quite a bit 
 I know for a fact that my communication skills can use a lot more improvement. While I still need to figure out what I am going to do to improve my verbal communication skill (meetups?), I have decided that I will write as much as possible to improve my written communication skill.
 
 So there you go. My 2018 resolution is going to be to write. But what good is a goal if it cannot be measured? I can either set a goal of say writing 1 hour every week or set a goal in terms of the number of words written. While, it is tempting to go with the former, I can totally see myself twiddling my thumb for an hour in the pretext of writing something. So I am going to decide a goal based on numbers. I am thinking of writing a total of 50,000 words publicly, and a total of 100,000 words privately (diary etc.). This actually means writing roughly 1000 words publicly every week.
-
-I am also hoping to write some articles about Machine learning and AI, and I will repost them to my [medium account](https://medium.com/@madiator).
