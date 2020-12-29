@@ -1,0 +1,25 @@
+---
+title: "Mind over Matter"
+layout: default
+permalink: "/mind-over-matter.html"
+intro: An unexamined life is not worth living.
+---
+<div class="container">
+<div class="row justify-content-center">
+    <div class="col-md-8">        
+        <div class="row align-items-center mb-5">
+            <div class="col-md-9">
+                <h2 class="font-weight-bold">{{page.title}}</h2>
+                
+                <p class="excerpt">{{ page.intro }}</p>
+            </div>
+            
+        </div>
+        <h4 class="font-weight-bold spanborder"><span>Articles</span></h4>
+            {% assign posts = site.posts | where:"categories","mind over matter" %}
+            {% for post in posts %}
+            {% include main-loop-card.html %}
+            {% endfor %}
+    </div>
+</div>
+</div>

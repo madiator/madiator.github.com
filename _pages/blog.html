@@ -1,0 +1,25 @@
+---
+title: "Blog"
+layout: default
+permalink: "/blog.html"
+intro: Other miscellaneous thoughts, musings and updates.
+---
+<div class="container">
+<div class="row justify-content-center">
+    <div class="col-md-8">        
+        <div class="row align-items-center mb-5">
+            <div class="col-md-9">
+                <h2 class="font-weight-bold">{{page.title}}</h2>
+                
+                <p class="excerpt">{{ page.intro }}</p>
+            </div>
+            
+        </div>
+        <h4 class="font-weight-bold spanborder"><span>Posts</span></h4>
+            {% assign posts = site.posts | where:"categories","blog" %}
+            {% for post in posts %}
+            {% include main-loop-card.html %}
+            {% endfor %}
+    </div>
+</div>
+</div>
