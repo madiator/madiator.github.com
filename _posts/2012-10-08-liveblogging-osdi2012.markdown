@@ -84,7 +84,6 @@ Both of them resort to random placement of vertices - vertices are selected rand
 
 Albert et al. proved that natural graphs may have good vertex cuts. There is a theorem in the paper that compared to edge-cut, vertex cuts can improve the communication costs. 
 
-Code available at [GraphLab](http://graphlab.org)
 
 ## GraphChi
 
@@ -95,7 +94,6 @@ Looks like a very promising tool especially when you don't have access to multip
 
 This talk is very similar to the previous one (well mostly in terms of the evaluations).
 
-Code available at [GraphChi](http://graphchi.org)
 
 Note: There doesn't seem to be a good network connection and there are only a few power outlets and my 9 month old macbook pro seems to be draining battery rapidly, so I think live blogging will be replaced by live notetaking.
 

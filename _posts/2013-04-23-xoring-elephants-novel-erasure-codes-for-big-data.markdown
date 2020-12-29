@@ -23,6 +23,6 @@ Here is the abstract:
 
 > We implement our new codes in Hadoop HDFS and compare to a currently deployed HDFS module that uses Reed-Solomon codes. Our modified HDFS implementation shows a reduction of approximately 2x on the repair disk I/O and repair network traffic. The disadvantage of the new coding scheme is that it requires 14% more storage compared to Reed-Solomon codes, an overhead shown to be information theoretically optimal to obtain locality. Because the new codes repair failures faster, this provides higher reliability, which is orders of magnitude higher compared to replication.
 
-Please also take a look at my post on [dummies guide to erasure codes](http://smahesh.com/blog/2012/07/01/dummies-guide-to-erasure-coding/) if you are new to the field. 
+Please also take a look at my post on [dummies guide to erasure codes](/dummies-guide-to-erasure-coding) if you are new to the field. 
 
 As you can read from the abstract, the main problem when using erasure codes is that they generate a lot of repair traffic (whereas replication uses a lot of storage). So our codes try to find a middle-ground between the repair traffic and the storage tradeoff. One thing I want to emphasize here is that, in data centers where there are thousands of servers, failure is the norm rather than the exception. Hopefully I will get to talk a little bit more about failures and the amount of repair traffic generated in data centers in a different post. Stay tuned!

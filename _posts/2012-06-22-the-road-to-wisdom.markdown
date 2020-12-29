@@ -7,7 +7,7 @@ image: http://photos.smahesh.com/Portfolio/Portfolio/PICT8694-Edit/1233338502_Y4
 categories: ["mind over matter"]
 ---
 
-[Piet Hein](http://en.wikipedia.org/wiki/Piet_Hein_(Denmark\)) puts it tersely:
+Piet Hein puts it tersely:
 
 > The road to wisdom? Well it's plain 
 and simple to express:
