@@ -1,0 +1,297 @@
+
+/*
+@colormajor:            #fcf8e5;
+@colorbrown:            #5c3317;
+@colorbrown2:           #76360b;
+@colorred:             #b13a04;
+@colormajordark:        #f2e8ce;
+@colormajordark2:       #e2cc92;
+ */
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html,
+body {
+                padding-top: 0px;
+                padding-bottom: 40px;
+                background-color: #fcf8e5;
+                font-family: 'Istok Web', sans-serif;
+                height:100%;
+                color: #76360b;
+
+                
+}
+p {
+    line-height: 1.7;
+    font-size: 18px;
+}
+a {
+  color: #b13a04;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b13a04;
+  text-decoration: underline;
+}
+::-webkit-selection {
+    background-color: #976533;
+    color: #fcf8e5;
+}
+::-moz-selection {
+    background-color: #976533;
+    color: #fcf8e5;
+}
+::selection {
+    background-color: #EF4423;
+    color:#fcf8e5;
+}
+.smalltalk {
+    font-size: 20px;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.hero-unit {
+    margin-top: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #f2e8ce;
+    background:  #f2e8ce url('../img/stripes.png') 50% 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    color: #b13a04;
+}
+
+h3 {
+    font-weight: normal;
+}
+
+.navbar-inner {
+    /*height: 80px;
+    text-align: center;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #5c3317;
+    background-image: none;
+}
+.nav {
+    font-size: 18px;
+    background-color: #5c3317;
+}
+.navbar .brand {
+        text-shadow: none;
+        color: #fff;
+}
+.navbar .nav > li > a {
+    background-color: #5c3317;
+    text-shadow: none;
+    
+}
+
+.navbar .nav > li > a:focus,
+.navbar .nav > li > a:hover {
+  color: #eee;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  color: #fff;
+  background-color: transparent;
+}
+
+.dropdown-menu li:focus,
+.dropdown-menu li:hover, 
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+    background-color: #976533;
+    color:#fcf8e5;
+    background-image: none;
+}
+
+.nav-tabs{
+    font-size: 18px;
+    background-color: #fcf8e5;
+}
+
+.btn-primary {
+    background-image: none;
+    background-color: #b13a04;
+}
+.btn-primary:hover {
+    background-image: none;
+    background-color: #222;
+}
+#callout {
+    background-color: #B13A04;    
+}
+
+#wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+}
+      
+#push{
+  height: 60px;
+}
+#footer{
+    height: 20px;    
+}
+#footer1 {
+    background-color: #5c3317;
+    color: #fcf8e5;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /*height: 60px;
+    width: 100%;
+    padding-left: 10px;*/
+}
+
+
+@media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+}
+
+#footer .container{
+        width: auto;
+        max-width: 680px;        
+}
+      
+#footer. container .credit {
+        margin: 20px 0;
+      }
+
+
+.simpleheading {
+    border-bottom: 1px solid #DFCEA1;
+    padding-bottom: 5px;
+    line-height: normal;
+    font-weight: normal;
+    margin-bottom: 20px !important
+}
+
+.simpleheadingcolored {
+    color: #EF4423;
+}
+
+.featuresbox{
+    border: 1px solid #ccc;
+    text-align: center;
+    padding:20px;
+    background: #f2e8ce;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+.featuresbox:hover{
+    /* fallback */ 
+    background-color: #f2e8ce;
+
+    /* Safari 4-5, Chrome 1-9 */ 
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f1f1), to(#f9f9f9)); 
+
+    /* Safari 5.1, Chrome 10+ */
+    background: -webkit-linear-gradient(top, #e2cc92, #e7d5a6); 
+
+    
+    /* Firefox 3.6+ */ 
+    background: -moz-linear-gradient(top, #f9f9f9, #f1f1f1); 
+
+    /* IE 10 */ 
+    background: -ms-linear-gradient(top, #f9f9f9, #f1f1f1); 
+
+    /* Opera 11.10+ */ 
+    background: -o-linear-gradient(top, #f9f9f9, #f1f1f1);
+
+    box-shadow: inset 0 0 0 1px #fff;
+    -moz-box-shadow: inset 0 0 0 1px #fff;
+    -webkit-box-shadow: inset 0 0 0 1px #fff;
+    -o-box-shadow: inset 0 0 0 1px #fff;
+    -ms-box-shadow: inset 0 0 0 1px #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-image {
+    width: 62px;
+    height: 55px;
+    display: block;
+    margin: 0 auto;
+}
+
+.pubgroup{
+    font-size: 18px; 
+    line-height: 1.5;
+    /*border: 1px solid #ccc;*/
+    background: #fcf8e5;
+    padding:10px;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+}
+
+.pubgroup:hover{
+    /* fallback */ 
+    background-color: #f2e8ce;
+
+    box-shadow: inset 0 0 0 1px #fff;
+    -moz-box-shadow: inset 0 0 0 1px #fff;
+    -webkit-box-shadow: inset 0 0 0 1px #fff;
+    -o-box-shadow: inset 0 0 0 1px #fff;
+    -ms-box-shadow: inset 0 0 0 1px #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
+li {
+    font-size: 18px; 
+    line-height: 1.5;
+}
+.publist a{
+    color: #76360b;
+    text-decoration: underline;
+}
+
