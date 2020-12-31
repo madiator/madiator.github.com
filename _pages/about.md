@@ -1,7 +1,7 @@
 ---
 title: "About"
 layout: page-sidebar
-permalink: "/about.html"
+permalink: "/about"
 comments: false
 ---
 ## Who am I?
@@ -15,10 +15,10 @@ Before that, I did my B.Tech(H) in Electronics and Electrical Communication Engi
 
 ## What is this site about?
 This is my home page and blog. I am interested and write/post about the following:
-* [Technology (tutorials, commentary)](/tech.html).
-* [About cognition, our mind, sharpening it with mental models, cognitive biases](/mind-over-matter.html).
+* [Technology (tutorials, commentary)](/tech).
+* [About cognition, our mind, sharpening it with mental models, cognitive biases](/mind-over-matter).
 * Photography and art (coming someday!).
-* and of course [miscellaneous articles, in the form of blogs](/blog.html).
+* and of course [miscellaneous articles, in the form of blogs](/blog).
 
 This site was made with <a target="_blank" class="text-dark font-weight-bold" href="https://www.wowthemes.net/mundana-jekyll-theme/"> Mundana Jekyll Theme </a> by <a class="text-dark" target="_blank" href="https://www.wowthemes.net">WowThemes</a>.
 

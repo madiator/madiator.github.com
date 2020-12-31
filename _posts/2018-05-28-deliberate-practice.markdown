@@ -4,6 +4,7 @@ title: "Deliberate Practice"
 date: 2018-05-28 11:00
 comments: true
 categories: ["mind over matter"]
+image: assets/images/tennis.jpg
 tags: featured
 ---
 

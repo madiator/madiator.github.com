@@ -3,6 +3,7 @@ layout: post
 title: "XORing Elephants: Novel Erasure Codes for Big Data"
 date: 2013-04-23 23:43
 comments: true
+image: assets/images/coloredpainting.jpg
 categories: ["tech"]
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title: "Popular Weekend Programming Languages"
 date: 2013-05-27 19:04
 comments: true
+image: assets/images/lisp.jpg
 categories: ["tech"]
 ---
 

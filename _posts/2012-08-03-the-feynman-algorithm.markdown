@@ -4,6 +4,7 @@ title: "The Feynman Algorithm"
 date: 2012-08-03 09:15
 comments: true
 published: false
+image: assets/images/pen.jpg
 categories: ["mind over matter"]
 ---
 
