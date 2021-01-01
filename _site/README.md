@@ -1,1 +1,0 @@
-Homepage/blog of Mahesh Sathiamoorthy.
