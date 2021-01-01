@@ -5,6 +5,8 @@ date: 2012-07-01 20:03
 comments: true
 categories: ["tech"]
 published: true
+redirect_from:
+  - blog/2012/07/01/dummies-guide-to-erasure-coding/
 ---
 
 If you read [this Wikipedia article on erasure coding](http://en.wikipedia.org/wiki/Erasure_code), you will be more prone to a headache than a person with migraine. Fortunately, there is help. Unfortunately, this article will be from the perspective of storage and not communication. This article is by no means rigorous, but should act as a 'dummies guide' and get you started. For example, if you are working on Hadoop and if you hear about people talking about erasure codes for Hadoop, this article will get you started. 

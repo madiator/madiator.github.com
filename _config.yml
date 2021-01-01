@@ -21,6 +21,7 @@ plugins_dir:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-redirect-from
   
 authors:
     mahesh:
