@@ -137,4 +137,12 @@
 <url>
 <loc>http://localhost:4000/page3/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/blog/2012/07/01/dummies-guide-to-erasure-coding.html</loc>
+<lastmod>2020-12-31T22:47:22-08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/2012/07/01/dummies-guide-to-erasure-coding/</loc>
+<lastmod>2020-12-31T22:47:32-08:00</lastmod>
+</url>
 </urlset>

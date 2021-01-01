@@ -15,13 +15,12 @@ mailchimp-list: 'https://mailchi.mp/a48618289422/subscribe-for-newsletter'
 include: ["_pages"]
 permalink: /:title/
 
-# Plugins
 plugins_dir: 
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-redirect-from
+
   
 authors:
     mahesh:
