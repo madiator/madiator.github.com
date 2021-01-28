@@ -15,7 +15,7 @@ mailchimp-list: 'https://mailchi.mp/a48618289422/subscribe-for-newsletter'
 include: ["_pages"]
 permalink: /:title/
 
-plugins_dir: 
+plugins: 
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
