@@ -4,6 +4,7 @@ title: "Dark Knowledge and distillation"
 date: 2018-05-27 16:00
 comments: true
 image: assets/images/book.jpg
+tags: sticky
 categories: ["tech"]
 ---
 

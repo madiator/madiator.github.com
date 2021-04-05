@@ -5,6 +5,7 @@ date: 2013-04-23 23:43
 comments: true
 image: assets/images/coloredpainting.jpg
 categories: ["tech"]
+tags: featured
 ---
 
 This is a post that has been long overdue. 
