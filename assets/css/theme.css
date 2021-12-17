@@ -2,6 +2,19 @@
  * Mundana Jekyll Theme (https://www.wowthemes.net/mundana-jekyll-theme/)
  */
 
+.pubgroup {
+    font-size: 18px; 
+    line-height: 1.5;
+    /*border: 1px solid #ccc;*/
+    
+    padding:10px;
+    transition:all 0.5s ease-in-out;
+    -moz-transition:all 0.5s ease-in-out;
+    -webkit-transition:all 0.5s ease-in-out;
+    -o-transition:all 0.5s ease-in-out;
+    -ms-transition:all 0.5s ease-in-out;
+}
+
 body {
 	overflow-x:hidden;
 	padding-top:69.75px;

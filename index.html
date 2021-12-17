@@ -19,10 +19,11 @@ description: "Homepage and blog of Mahesh Sathiamoorthy"
                 <h1>Mahesh Sathiamoorthy</h1>
                 <h4>Staff Software Engineer at Google Brain</h4>
                 <br>
+                <h5>Brief Bio</h5>
                 <p>I am Maheswaran Sathiamoorthy, but go by Mahesh Sathiamoorthy. </p>
 
                 <p>I am a Software Engineer at Google since 2014 and work on ML/Recommender Systems/TPUs (since 2017). 
-                From 2008 to 2013, I was a PhD student at Ming Hsieh Department of Electrical Engineering, University of Southern California. I worked with Prof. Bhaskar Krishnamachariand Prof. Alex Dimakis.</p>
+                From 2008 to 2013, I was a PhD student at Department of Electrical Engineering, University of Southern California. I worked with Prof. Bhaskar Krishnamachari and Prof. Alex Dimakis.</p>
 
                 <p>Before that, I did my B.Tech(H) in Electronics and Electrical Communication Engineering at the Indian Institute of Technology Kharagpur, India.</p>
 
@@ -61,43 +62,43 @@ description: "Homepage and blog of Mahesh Sathiamoorthy"
     </div>
 </div>
 
-{% endif %}
-</div>
-
-<div class="container">
-    
-{% if page.url == "/" %}
-    
-    
-
-    
-<!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
-{% for post in site.posts %} 
-{% if post.tags contains "sticky" %}
 <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
     <div class="pl-4 pr-0 h-100 tofront">
         <div class="row justify-content-between">
             <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
-                <h1 class="mb-3">{{post.title}}</h1>
-                <p class="mb-3 lead">
-                    {{ post.excerpt | strip_html | strip_newlines | truncate: 136 }}
-                </p>
-                <a href="{{site.baseurl}}{{post.url}}" class="btn btn-dark">Read More</a>
+                <h1 class="mb-3">Research/Current Work</h1>
+                I am a Tech Lead in Google Brain and currently work on large scale real world recommender models, with a goal of scaling them up to harness the benefits of large models.
+                I work on all aspects of recommender models: infrastructure and productionization, research and engagements. My work benefits surfaces such as YouTube.
             </div>
-            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url({% if post.image contains "://" %}{{ post.image }}{% else %}{{ site.baseurl }}/{{ post.image }}{% endif %});">	
+            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url(assets/images/TPU.png);"></div>
+        </div>
+    </div>
+</div> 
+
+
+
+<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem position-relative" style="background-color: #f9f8f4;">
+    <div class="pl-4 pr-0 h-100 tofront">
+        <div class="row justify-content-between">
+            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
+                <h1 class="mb-3">Selected Publications</h1>
+                <ol>
+                    <li>Hussein Hazimeh, Zhe Zhao, Aakanksha Chowdhery, Maheswaran Sathiamoorthy, Yihua Chen, Rahul Mazumder, Lichan Hong, Ed H Chi. "DSelect-k: Differentiable Selection in the Mixture of Experts with Applications to Multi-Task Learning". NeurIPS 2021 [<a href="https://arxiv.org/abs/2106.03760">arxiv</a>]</li>
+                    <li>Zhe Zhao, Lichan Hong, Li Wei, Jilin Chen, Aniruddh Nath, Shawn Andrews, Aditee Kumthekar, Maheswaran Sathiamoorthy, Xinyang Yi, and Ed Chi. 2019. "Recommending what video to watch next: a multitask ranking system". In Proc. of the 13th ACM Conference on Recommender Systems (RecSys '19). ACM, New York, NY, USA, 43-51. DOI: https://doi.org/10.1145/3298689.3346997 [<a href="https://research.google/pubs/pub49380/">Google</a>]</li>
+                    <li>Stephen Macke, Alex Beutel, Tim Kraska, Maheswaran Sathiamoorthy, Derek Zhiyuan Cheng, Ed H. Chi. Lifting the Curse of Multidimensional Data with Learned Existence Indexes. ML for Systems workshop at NeurIPS, 2018. [<a href="https://drive.google.com/file/d/18KqfX-GUVC-v2OwFhEtE2Y9QeRNZjOi4/view">pdf</a>]</li>
+                    <li>Maheswaran Sathiamoorthy, Megasthenis Asteris, Dimitris Papailiopoulos, Alex G. Dimakis, Ramkumar Vadali, Scott Chen, Dhruba Borthakur, "XORing Elephants: Novel Erasure Codes for Big Data", VLDB 2013.</li>
+                </ol>
             </div>
         </div>
     </div>
 </div> 
+
 {% endif %}
-{% endfor %}
+</div>
 
+<div class="container">
 
-    
-
-
-{% endif %} <!--endif page url is / -->
-    
+        
 
 
 <!-- 

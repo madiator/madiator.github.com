@@ -5,7 +5,7 @@ date: 2018-05-28 11:00
 comments: true
 categories: ["mind over matter"]
 image: assets/images/tennis.jpg
-tags: featured
+published: false
 ---
 
 I read the book [Outliers](https://books.google.com/books/about/Outliers.html?id=3NSImqqnxnkC) several years ago, and as far as I can remember, I was very impressed with the book. Then I started hearing complaints about the book: that the ten thousand hour rule that the author, [Malcom Gladwell](https://en.wikipedia.org/wiki/Malcolm_Gladwell), had been preaching, was over-simplified, and Gladwell may have not stuck to high standards when reporting on some examples.

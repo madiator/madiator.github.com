@@ -4,7 +4,7 @@ title: "Introducing smarter.blog"
 date: 2021-04-04
 comments: false
 categories: ["blog"]
-tags: featured
+published: true
 ---
 I started a new blog called [smarter.blog](http://smarter.blog) at the beginning of the year.
 
