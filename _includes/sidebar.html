@@ -4,12 +4,3 @@
 
 <a href="https://www.linkedin.com/in/smaheswaran" target="_blank">LinkedIn</a> <br>
 <a href="https://scholar.google.com/citations?user=HLkvYl0AAAAJ&hl=en" target="_blank">Google Scholar</a> <br>
-{% assign total_word_count = 0 %}
-{% for post in site.posts %}
-	{% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
-	{% if year == "2021" %}
-    	{% assign words = post.content | number_of_words %}
-    	{% assign total_word_count = total_word_count | plus: words %}
-    {% endif %}
-{% endfor %}
-{{total_word_count}} words written in 2021.

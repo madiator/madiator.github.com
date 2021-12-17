@@ -1,8 +1,8 @@
 ---
 title: "Blog"
 layout: default
-permalink: "/blog.html"
-intro: Other miscellaneous thoughts, musings and updates.
+permalink: "/blog"
+intro: Miscellaneous thoughts, musings and updates.
 ---
 <div class="container">
 <div class="row justify-content-center">
@@ -16,7 +16,7 @@ intro: Other miscellaneous thoughts, musings and updates.
             
         </div>
         <h4 class="font-weight-bold spanborder"><span>Posts</span></h4>
-            {% assign posts = site.posts | where:"categories","blog" %}
+            {% assign posts = site.posts %}
             {% for post in posts %}
             {% include main-loop-card.html %}
             {% endfor %}
