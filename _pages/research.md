@@ -1,5 +1,6 @@
 ---
 title: "Research"
+layout: default
 permalink: "/research.html"
 ---
   <div class="container">

@@ -1,6 +1,7 @@
 ---
 title: "Projects"
 permalink: "/projects.html"
+layout: default
 ---
 
 <div class="container">
@@ -15,7 +16,7 @@ permalink: "/projects.html"
               <li>About 2x reduction in network utilization and disk I/O during file repairs.</li>              
               <li>Advised by Prof. Alex Dimakis.</li>
               <li>Source code available at <a href="https://github.com/madiator/HadoopUSC">https://github.com/madiator/HadoopUSC</a></li>
-              <li>Appeared <b>VLDB 2013</b>. </li>
+              <li>Appeared in <b>VLDB 2013</b>. </li>
               <li> <a href="http://smahesh.com/HadoopUSC">Visit the project page.</a> </li>
             </ul>            
           </div>
