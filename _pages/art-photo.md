@@ -21,7 +21,7 @@ layout: default
 	        </div>
 	    </div>
 	</div>
-	<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
+	<!-- <div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
 	    <div class="pl-4 pr-0 h-100 tofront">
 	        <div class="row justify-content-between">
 	            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
@@ -36,5 +36,5 @@ layout: default
 	            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url(assets/images/charcoal.jpg);"></div>
 	        </div>
 	    </div>
-	</div>
+	</div> -->
 </div> <!-- /container -->
