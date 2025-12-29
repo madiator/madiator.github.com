@@ -17,14 +17,24 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-    <!-- Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+    <!-- Google Fonts - Monospace for terminal aesthetic -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap Modified -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
 
     <!-- Theme Stylesheet -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/theme.css">
+
+    <!-- Prevent flash of wrong theme -->
+    <script>
+        (function() {
+            var savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'light') {
+                document.documentElement.setAttribute('data-theme', 'light');
+            }
+        })();
+    </script>
 
 
     <!-- For Google Scholar. If this fails, we can go with something like https://icons.getbootstrap.com/icons/book/ in bootstrap itself. -->
@@ -50,7 +60,7 @@
 <body class="{% if page.url == "/" %} homefirstpage {% endif %}">
 
     <!-- Navbar -->
-    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
         <a class="navbar-brand" href="{{ site.baseurl }}/index.html"><strong>{{site.name}}</strong></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,6 +72,13 @@
             </ul>
             <ul class="navbar-nav ml-auto d-flex align-items-center">
                 {% include search-lunr.html %}
+                <li class="nav-item">
+                    <div class="theme-toggle" id="themeToggle" title="Toggle theme">
+                        <span class="theme-toggle-icon moon"><i class="fas fa-moon"></i></span>
+                        <div class="theme-toggle-switch"></div>
+                        <span class="theme-toggle-icon sun"><i class="fas fa-sun"></i></span>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -87,13 +104,12 @@
 
 
     <!-- Footer -->
-    <footer class="bg-white border-top p-3 text-muted small">
+    <footer class="border-top p-3 text-muted small">
         <div class="container">
         <div class="row align-items-center justify-content-between">
             <div>
-                <span class="navbar-brand mr-2 mb-0"><strong>Mahesh Sathiamoorthy</strong></span>
-                <span>Copyright © <script>document.write(new Date().getFullYear())</script>.</span>
-
+                <span class="navbar-brand mr-2 mb-0"><strong>> Mahesh Sathiamoorthy</strong></span>
+                <span>Copyright © <script>document.write(new Date().getFullYear())</script> | Built with curiosity</span>
             </div>
         </div>
         </div>

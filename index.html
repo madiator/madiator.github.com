@@ -6,95 +6,123 @@ pagination:
 description: "Homepage and blog of Mahesh Sathiamoorthy"
 ---
 
-
-<div class="container">
-    
 {% if page.url == "/" %}
 
-
-<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem position-relative" style="background-color: #f9f8f4;">
-    <div class="pl-4 pr-0 h-100 tofront">
-        <div class="row justify-content-between">
-            <div class="col-sm-8 pt-6 pb-6 pr-lg-4 align-self-center">
-                <h1>Mahesh Sathiamoorthy</h1>
-                <h4>Co-founder/CEO at <a href="https://www.bespokelabs.ai">Bespoke Labs</a>, ex-Google DeepMind</h4>
-                <br>
-                <h5>Brief Bio</h5>
-                <p>I am Maheswaran Sathiamoorthy, but go by Mahesh Sathiamoorthy. </p>
-
-                <p>Previously, I was a Staff Software Engineer at Google DeepMind. I worked on using LLMs to improve recommendations, such as for YouTube. I was with Google since 2014.
-                From 2008 to 2013, I was a PhD student at Department of Electrical Engineering, University of Southern California. I worked with Prof. Bhaskar Krishnamachari and Prof. Alex Dimakis.</p>
-
-                <p>Before that, I did my B.Tech(H) in Electronics and Electrical Communication Engineering at the Indian Institute of Technology Kharagpur, India.</p>
-
-                <p>Contact me at mahesh at smahesh dot com.</p>
-
-                <div class="row bottom">
-                    <div class="col-sm-2">
-                        <a class="btn btn-dark" href="https://www.linkedin.com/in/smaheswaran" role="button">
-                            <span class="fab fa-linkedin"></span>LinkedIn
-                        </a>
+<!-- Hero Section -->
+<section class="hero-terminal">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 hero-content">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <span class="terminal-title">about.sh</span>
                     </div>
+                    <div class="terminal-body">
+                        <p class="cmd-prompt mb-2" style="font-family: var(--font-mono); color: var(--terminal-text);">whoami</p>
+                        <h1 class="hero-title">Mahesh Sathiamoorthy</h1>
+                        <h4 class="hero-subtitle">Co-founder/CEO at <a href="https://www.bespokelabs.ai">Bespoke Labs</a></h4>
+                        <p class="cmd-output">Previously: Staff Software Engineer @ Google DeepMind</p>
 
-                    <div class="col-sm-2">
-                      <a class="btn btn-dark" href="https://scholar.google.com/citations?user=HLkvYl0AAAAJ&hl=en" role="button">
-                        <span class="ai ai-google-scholar-square ai-1x"></span>Scholar
-                      </a>
+                        <div class="mt-4">
+                            <p class="cmd-prompt mb-2" style="font-family: var(--font-mono); color: var(--terminal-text);">cat bio.txt</p>
+                            <p class="hero-bio" style="font-family: var(--font-mono); font-size: 0.95rem;">
+                                B.Tech from IIT Kharagpur <span style="color: var(--terminal-accent);">-></span> MS/PhD from USC <span style="color: var(--terminal-accent);">-></span> Google (Brain, DeepMind) <span style="color: var(--terminal-accent);">-></span> Bespoke Labs
+                            </p>
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="cmd-prompt mb-2" style="font-family: var(--font-mono); color: var(--terminal-text);">echo $CONTACT</p>
+                            <p class="cmd-output">mahesh at smahesh dot com</p>
+                        </div>
+
+                        <div class="mt-4 d-flex flex-wrap gap-2" style="gap: 0.5rem;">
+                            <a class="btn btn-dark" href="https://www.linkedin.com/in/smaheswaran" role="button">
+                                <span class="fab fa-linkedin"></span> LinkedIn
+                            </a>
+                            <a class="btn btn-dark" href="https://scholar.google.com/citations?user=HLkvYl0AAAAJ&hl=en" role="button">
+                                <span class="ai ai-google-scholar-square ai-1x"></span> Scholar
+                            </a>
+                            <a class="btn btn-dark" href="https://twitter.com/madiator" role="button">
+                                <span class="fab fa-twitter"></span> Twitter
+                            </a>
+                            <a class="btn btn-dark" href="http://github.com/madiator" role="button">
+                                <span class="fab fa-github"></span> Github
+                            </a>
+                        </div>
                     </div>
-
-
-                    <div class="col-sm-2">
-                        <a class="btn btn-dark" href="https://twitter.com/madiator" role="button">
-                            <span class="fab fa-twitter"></span>Twitter
-                        </a>
-                    </div>
-
-                    <div class="col-sm-2">
-                        <a class="btn btn-dark" href="http://github.com/madiator" role="button">
-                            <span class="fab fa-github"></span>Github
-                        </a>
-                   </div>
-                   
                 </div>
             </div>
-            <div class="col-sm-4 pt-6 pb-6 pr-lg-4 align-self-right">
-                <img src="assets/images/Mahesh.jpg" width="300px">
+            <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                <img src="assets/images/Mahesh.jpg" class="hero-image" style="max-width: 320px;" alt="Mahesh Sathiamoorthy">
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
-    <div class="pl-4 pr-0 h-100 tofront">
-        <div class="row justify-content-between">
-            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
-                <h1 class="mb-3">Recent Work</h1>
-                I started Bespoke Labs in 2024. We focus on RL environment curation and Data curation.<br>
-                <br>
-                Previously, I was a Tech Lead in Google DeepMind and worked on LLM-based recommender models. In 2021, 
-                very few people were thinking about applying the bitter lesson to recommender systems. 
-                I kickstarted a project to scale recommender models using LLMs, which resulted in
-                several research publications (and one best paper award) and many impactful launches across recommender systems such as YouTube.
-                <br>
+<!-- Recent Work Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                </div>
+                <span class="terminal-title">work.log</span>
             </div>
-            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url(assets/images/tpu.png);"></div>
+            <div class="terminal-body">
+                <div class="section-title">Recent Work</div>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <p class="cmd-prompt mb-2" style="font-family: var(--font-mono); color: var(--terminal-text);">cat current_focus.md</p>
+                        <p>
+                            I started <a href="https://www.bespokelabs.ai">Bespoke Labs</a> in 2024. We focus on RL environment curation and Data curation.
+                        </p>
+                        <p class="cmd-prompt mb-2 mt-4" style="font-family: var(--font-mono); color: var(--terminal-text);">cat previous_work.md</p>
+                        <p>
+                            Previously, I was a Tech Lead in Google DeepMind and worked on LLM-based recommender models. In 2021,
+                            very few people were thinking about applying the bitter lesson to recommender systems.
+                            I kickstarted a project to scale recommender models using LLMs, which resulted in
+                            several research publications (and one best paper award) and many impactful launches across recommender systems such as YouTube.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <img src="assets/images/bespokelabs_diorama.jpg" style="border-radius: 8px; border: 1px solid var(--terminal-border);" alt="Bespoke Labs">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div> 
+</section>
 
+<!-- Publications Section -->
+<section class="section">
+    <div class="container">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                </div>
+                <span class="terminal-title">publications.bib</span>
+            </div>
+            <div class="terminal-body">
+                <div class="section-title">Selected Publications</div>
+                <p class="cmd-prompt mb-3" style="font-family: var(--font-mono); color: var(--terminal-text);">grep -r "author:Sathiamoorthy" ./papers/</p>
 
-
-<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem position-relative" style="background-color: #f9f8f4;">
-    <div class="pl-4 pr-0 h-100 tofront">
-        <div class="row justify-content-between">
-            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
-                <h1 class="mb-3">Selected Publications</h1>
                 <ol>
                     <li>Etash Guha, Ryan Marten, Sedrick Keh, Negin Raoof, Georgios Smyrnis, .. <b>Maheswaran Sathiamoorthy</b>, Alex Dimakis, Ludwig Schmidt. "OpenThoughts: Data Recipes for Reasoning Models". <a href="https://arxiv.org/abs/2506.04178">arXiv</a>. 2025</li>
-                    <li>Yashar Deldjoo, Zhankui He, Julian McAuley, Anton Korikov, Scott Sanner, Arnau Ramisa, René Vidal, <b>Maheswaran Sathiamoorthy</b>, Atoosa Kasrizadeh, Silvia Milano, Francesco Ricci. "Recommendation with generative models". <a href="https://arxiv.org/abs/2409.15173">arXiv</a>. 2024</li>
-                    <li>Yashar Deldjoo, Zhankui He, Julian McAuley, Anton Korikov, Scott Sanner, Arnau Ramisa, René Vidal, <b>Maheswaran Sathiamoorthy</b>, Atoosa Kasirzadeh, Silvia Milano. "A review of modern recommender systems using generative models (gen-recsys)". Proceedings of the 30th ACM SIGKDD conference on Knowledge Discovery and Data Mining. 2024</li>
+                    <li>Yashar Deldjoo, Zhankui He, Julian McAuley, Anton Korikov, Scott Sanner, Arnau Ramisa, Rene Vidal, <b>Maheswaran Sathiamoorthy</b>, Atoosa Kasrizadeh, Silvia Milano, Francesco Ricci. "Recommendation with generative models". <a href="https://arxiv.org/abs/2409.15173">arXiv</a>. 2024</li>
+                    <li>Yashar Deldjoo, Zhankui He, Julian McAuley, Anton Korikov, Scott Sanner, Arnau Ramisa, Rene Vidal, <b>Maheswaran Sathiamoorthy</b>, Atoosa Kasirzadeh, Silvia Milano. "A review of modern recommender systems using generative models (gen-recsys)". Proceedings of the 30th ACM SIGKDD conference on Knowledge Discovery and Data Mining. 2024</li>
                     <li>Shashank Rajput, Nikhil Mehta, Anima Singh, Raghunandan H. Keshavan, Trung Vu, Lukasz Heldt, Lichan Hong, Yi Tay, Vinh Q. Tran, Jonah Samost, Maciej Kula, Ed H. Chi, <b>Maheswaran Sathiamoorthy</b>. "Recommender Systems with Generative Retrieval". <a href="https://arxiv.org/abs/2305.05065">arxiv</a>. NeurIPS 2023</li>
-                    <li>Jiaxi Tang, Yoel Drori, Daryl Chang, <b>Maheswaran Sathiamoorthy</b>, Justin Gilmer, Li Wei, Xinyang Yi, Lichan Hong, Ed H. Chi, "Improving Training Stability for Multitask Ranking Models in Recommender Systems". <a href="https://arxiv.org/abs/2302.09178">arxiv</a>. KDD 2023, <b>Best Paper Award</b> in Data Science Track.</li>
+                    <li>Jiaxi Tang, Yoel Drori, Daryl Chang, <b>Maheswaran Sathiamoorthy</b>, Justin Gilmer, Li Wei, Xinyang Yi, Lichan Hong, Ed H. Chi, "Improving Training Stability for Multitask Ranking Models in Recommender Systems". <a href="https://arxiv.org/abs/2302.09178">arxiv</a>. KDD 2023, <span style="color: var(--terminal-accent-orange);">Best Paper Award</span> in Data Science Track.</li>
                     <li>Wang-Cheng Kang, Jianmo Ni, Nikhil Mehta, <b>Maheswaran Sathiamoorthy</b>, Lichan Hong, Ed Chi, Derek Zhiyuan Cheng. "Do LLMs Understand User Preferences? Evaluating LLMs On User Rating Prediction". <a href="https://arxiv.org/abs/2305.06474">arxiv</a>. Workshop on Personalized Generative AI, CIKM 2023.</li>
                     <li>Anima Singh, Trung Vu, Raghunandan Keshavan, Nikhil Mehta, Xinyang Yi, Lichan Hong, Lukasz Heldt, Li Wei, Ed Chi, <b>Maheswaran Sathiamoorthy</b>. "Better Generalization with Semantic IDs: A case study in Ranking for Recommendations". <a href="">Preprint 2023</a></li>
                     <li>Kiran Vodrahalli, Rakesh Shivanna, <b>Maheswaran Sathiamoorthy</b>, Sagar Jain, Ed H. Chi. "Algorithms for Efficiently Learning Low-Rank Neural Networks". 2022 (<a href="https://arxiv.org/abs/2202.00834">preprint</a>)</li>
@@ -106,14 +134,24 @@ description: "Homepage and blog of Mahesh Sathiamoorthy"
             </div>
         </div>
     </div>
-</div> 
+</section>
 
+<!-- Talks Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                </div>
+                <span class="terminal-title">talks.log</span>
+            </div>
+            <div class="terminal-body">
+                <div class="section-title">Recent Talks</div>
+                <p class="cmd-prompt mb-3" style="font-family: var(--font-mono); color: var(--terminal-text);">ls -la ./talks/2025/</p>
 
-<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
-    <div class="pl-4 pr-0 h-100 tofront">
-        <div class="row justify-content-between">
-            <div class="col-md-12 pt-6 pb-6 pr-lg-4 align-self-center">
-                <h1 class="mb-3">Recent Talks</h1>
                 <ol>
                     <li>OpenThoughts: Snowflake, 2025</li>
                     <li>OpenThoughts: Uber India, 2025</li>
@@ -124,12 +162,6 @@ description: "Homepage and blog of Mahesh Sathiamoorthy"
             </div>
         </div>
     </div>
-</div> 
+</section>
 
 {% endif %}
-</div>
-
-<div class="container">
-
-
-</div>
