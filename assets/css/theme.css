@@ -490,16 +490,16 @@ ol li {
     background: transparent;
     border-radius: 0;
     border-left: none;
-    border-bottom: 1px solid var(--color-border);
-}
-
-ol li:last-child {
-    border-bottom: none;
 }
 
 ol li:hover {
     border-left-color: transparent;
     background: transparent;
+}
+
+ol.impact-list li {
+    margin-bottom: 0;
+    padding: 0.15rem 0;
 }
 
 ol li b {

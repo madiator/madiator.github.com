@@ -5,7 +5,6 @@
 $(document).ready(function() {
     initNavbarEffects();
     initScrollEffects();
-    initSearchFunctionality();
     initSmoothScroll();
 });
 
@@ -61,53 +60,6 @@ function initScrollEffects() {
 }
 
 /**
- * Search functionality
- */
-function initSearchFunctionality() {
-    var idx;
-
-    function loadSearch() {
-        idx = lunr(function() {
-            this.field('id');
-            this.field('title', { boost: 10 });
-            this.field('summary');
-        });
-
-        $.getJSON('/content.json', function(data) {
-            window.searchData = data;
-            $.each(data, function(index, entry) {
-                idx.add($.extend({ "id": index }, entry));
-            });
-        });
-    }
-
-    $('#search').on('click', function() {
-        $('.searchForm').toggleClass('show');
-        if ($('.searchForm').hasClass('show')) {
-            $('#searchField').focus();
-        }
-    });
-
-    $('#searchForm').on('submit', function(e) {
-        e.preventDefault();
-        if (!idx) return;
-
-        var results = idx.search($('#searchField').val());
-        $('#content').html('<h1>Search Results (' + results.length + ')</h1>');
-        $('#content').append('<ul id="searchResults"></ul>');
-
-        $.each(results, function(index, result) {
-            var entry = window.searchData[result.ref];
-            $('#searchResults').append('<li><a href="' + entry.url + '">' + entry.title + '</a></li>');
-        });
-    });
-
-    if (typeof lunr !== 'undefined') {
-        loadSearch();
-    }
-}
-
-/**
  * Smooth scroll
  */
 function initSmoothScroll() {
@@ -137,13 +89,3 @@ function initSmoothScroll() {
     }
 }
 
-$(document).keydown(function(e) {
-    if ((e.ctrlKey || e.metaKey) && e.keyCode === 75) {
-        e.preventDefault();
-        $('.searchForm').addClass('show');
-        $('#searchField').focus();
-    }
-    if (e.keyCode === 27) {
-        $('.searchForm').removeClass('show');
-    }
-});
